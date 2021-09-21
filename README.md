@@ -35,7 +35,7 @@ lo cual crea una compilación optimizada de tu aplicación en el directorio buil
 
 ## Qué es el Dom?
 
-**Document Object Model**
+**Document Object Model** 
 EL DOM posee una estructura en forma de árbol:
 
 ![image](https://user-images.githubusercontent.com/6796155/134211026-31e3c56f-f7dc-4946-8b42-44486ea9e99a.png)
