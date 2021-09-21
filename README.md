@@ -35,6 +35,9 @@ lo cual crea una compilación optimizada de tu aplicación en el directorio buil
 
 ## Qué es el Dom?
 
+**Document Object Model**
+EL DOM posee una estructura en forma de árbol:![image](https://user-images.githubusercontent.com/6796155/134211026-31e3c56f-f7dc-4946-8b42-44486ea9e99a.png)
+Esto provoca que cada vez que modificamos un elemento dentro de él, todos sus hijos tengan que ser pintados de nuevo (hayan o no cambiado). Y justo este proceso es el que provoca los problemas de rendimiento. Por tanto, cuantos más elementos queden por debajo de nuestro elemento modificado en la estructura del DOM más elementos tendrán que ser vueltos a pintar en la interfaz gráfica.
 
 ## Dom Virtual vs Dom Real
 
