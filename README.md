@@ -24,7 +24,14 @@ npx create-react-app my-app
 cd my-app
 npm start 
 ```
+Create React App no se encarga de la lógica de backend o de bases de datos; tan solo crea un flujo de construcción para frontend, de manera que lo puedes usar con cualquier backend. Para ello internamente usa Babel y webpack, pero no necesitas saber nada de estas herramientas para usar Create React App.
 
+Cuando estés listo para desplegar a producción, ejecuta
+
+```
+npm run build 
+```
+lo cual crea una compilación optimizada de tu aplicación en el directorio build
 
 ## Qué es el Dom?
 
