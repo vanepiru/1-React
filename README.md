@@ -45,7 +45,11 @@ React utiliza una sintaxis basada en XML (similar al HTML) para construir sus co
 
 
 ## Tips!
-
+- Solo puede haber un element padre
+- La etiqueta class se llama className porque es una palabra reservada para react (class)
+- Los Elementos se deben cerrar
+- Los estilos deben colocarse con un objeto javascript
+- Lo eventos deben también estar con camelCase
 
 ## Props
 
