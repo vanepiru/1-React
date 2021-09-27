@@ -3,37 +3,37 @@
 
 |Sl.No|   Questions                                              |
 |-----|----------------------------------------------------------|
-| 01. |[React Introduccion] https://github.com/vanepiru/react/blob/main/README.md#react-introducci%C3%B3n-               |
-| 02. |[Historia]| |
+| 01. |[React Introduccion]|
+| 02. |[Historia]||
 | 03. |[Caraterísticas Generales]| |
-| 04. |[Historia]|
+| 04. |[Create React App]|
 
 
 <br/>
 
-## ***React Introducción ***
+## Q. ***React Introducción***
 React se define como una librería Javascript focalizada en el desarrollo de interfaces de usuario.
 El principal objetivo de ReactJS es desarrollar interfaces de usuario (UI) que mejoren la velocidad de las aplicaciones. Utiliza DOM virtual (objeto JavaScript), que mejora el rendimiento de la aplicación. El DOM virtual de JavaScript es más rápido que el DOM real.
 
-## *** Historia***
+## Q. ***Historia***
 - Creado por Jordan Walke, un ingeniero en software de Facebook
 - Implementado en las noticias de Facebook en 2011 y luego por instagram en 2012
 - Fue de código abierto en JSConf US en mayo de 2013
 - El 18 de abril de 2017, Facebook anunció React Fiber
 - El 26 de septiembre de 2017, React 16.0 fue lanzado al público. El 16 de febrero de 2019, React 16.8 fue lanzado al público
 
-## *** Caraterísticas Generales***
+## Q. ***Caraterísticas Generales***
 - **Declarativo**: React hace que sea sencillo crear interfaces de usuario interactivas. Diseña vistas simples para cada estado de tu aplicación, y React actualizará y renderizará eficientemente los componentes correctos cuando cambien los datos. Las vistas declarativas hacen que el código sea más predecible, más sencillo de entender y más fácil de depurar.
 - **Basado en componentes**: Crea componentes encapsulados que administran su propio estado y luego organizalos para crear interfaces de usuario complejas. Dado que la lógica de componentes está escrita en JavaScript y no sobre plantillas, puedes manejar fácilmente datos enriquecidos a través de la aplicación y mantener el estado fuera del DOM.
 - **Aprende solamente una vez, escribe código donde sea**: Puedes desarrollar nuevas funciones en React sin reescribir el código existente. React también puede renderizarse sobre el servidor a través de Node JS y permite potenciar tus aplicaciones móviles usando React Native.
 
 Lin https://es.reactjs.org/
 
-## *** Create React App ***
+## Q. ***Create React App***
 
 Necesitarás tener Node >= 14.0.0 y npm >= 5.6 instalados en tu máquina. Para crear un proyecto ejecuta:
 
-```
+```js
 npx create-react-app my-app
 cd my-app
 npm start 
@@ -42,7 +42,7 @@ Create React App no se encarga de la lógica de backend o de bases de datos; tan
 
 Cuando estés listo para desplegar a producción, ejecuta
 
-```
+```js
 npm run build 
 ```
 lo cual crea una compilación optimizada de tu aplicación en el directorio build
