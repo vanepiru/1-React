@@ -12,8 +12,10 @@
 | 07. |[Qué es un componente?](#7-qué-es-un-componente) |
 | 08. |[¿Cuál es la diferencia entre componente y contenedor en React?](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
 | 09. |[jsx](#9-jsx) |
-| 10. |[¿Cuál es la diferencia entre componente y contenedor en React?](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 11. |[¿Cuál es la diferencia entre componente y contenedor en React?](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 10. |[](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 11. |[](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 12. |[](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 13. |[](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
 <br/>
 
 ## 1. ***React Introducción***
@@ -162,20 +164,20 @@ React utiliza una sintaxis basada en XML (similar al HTML) para construir sus co
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
-## Tips!
+## 10. ***Tips!***
 - Solo puede haber un element padre
 - La etiqueta class se llama className porque es una palabra reservada para react (class)
 - Los Elementos se deben cerrar
 - Los estilos deben colocarse con un objeto javascript
 - Lo eventos deben también estar con camelCase
 
-## Props
+## 11. ***Props***
 
 Las propiedades de un componente se pueden definir como los atributos de configuración para dicho componente. Son recibidos desde un nivel superior (normalmente al instanciar el componente) y por definición son inmutables, es decir, un componente no puede cambiar sus propias props.
 
 Ejemplo de uso de los props pasandole las propiedades cuando se van a renderizar el DOM
 
-```
+```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -189,7 +191,7 @@ export default MyComponent;
 ```
 Aqui es donde se le pasan las propiedades name y edad en el app.js
 
-```
+```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MyComponent from "./components/ejemplo_props";
@@ -217,6 +219,9 @@ ReactDOM.render(
   document.getElementById('app')
 );
 ```
+
+## 12. ***Cómo importar y exportar componentes usando React.js***
+
 
 ## Conceptos Adicionales
 
