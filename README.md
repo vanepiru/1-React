@@ -9,8 +9,11 @@
 | 04. |[Create React App](#4-create-react-app) |
 | 05. |[Dom](#5-dom) |
 | 06. |[Dom Virtual vs Dom Real](#6-dom-virtual-vs-dom-real) |
-| 07. |[Qué es un componente?](#7-dom-virtual-vs-dom-real) |
-| 08. |[¿Cuál es la diferencia entre componente y contenedor en React?](#8-dom-virtual-vs-dom-real) |
+| 07. |[Qué es un componente?](#7-qué-es-un-componente) |
+| 08. |[¿Cuál es la diferencia entre componente y contenedor en React?](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 09. |[jsx](#9-jsx) |
+| 10. |[¿Cuál es la diferencia entre componente y contenedor en React?](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 11. |[¿Cuál es la diferencia entre componente y contenedor en React?](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
 <br/>
 
 ## 1. ***React Introducción***
