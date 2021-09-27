@@ -4,32 +4,49 @@
 |Sl.No|   Questions                                              |                                                
 |-----|----------------------------------------------------------|
 | 01. |[React Introduccion](#q-what-is-reactjs) |
-| 02. |[Historia]|
-| 03. |[Caraterísticas Generales](#q-caraterísticas-generales) |
+| 02. |[Historia](#3-historia) |
+| 03. |[Caraterísticas Generales](#3-caraterísticas-generales) |
 | 04. |[Create React App]|
 
 
 <br/>
 
-## Q. ***React Introducción***
+## 1. ***React Introducción***
 React se define como una librería Javascript focalizada en el desarrollo de interfaces de usuario.
 El principal objetivo de ReactJS es desarrollar interfaces de usuario (UI) que mejoren la velocidad de las aplicaciones. Utiliza DOM virtual (objeto JavaScript), que mejora el rendimiento de la aplicación. El DOM virtual de JavaScript es más rápido que el DOM real.
 
-## Q. ***Historia***
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+
+## 2. ***Historia***
 - Creado por Jordan Walke, un ingeniero en software de Facebook
 - Implementado en las noticias de Facebook en 2011 y luego por instagram en 2012
 - Fue de código abierto en JSConf US en mayo de 2013
 - El 18 de abril de 2017, Facebook anunció React Fiber
 - El 26 de septiembre de 2017, React 16.0 fue lanzado al público. El 16 de febrero de 2019, React 16.8 fue lanzado al público
 
-## Q. ***Caraterísticas Generales***
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+
+## 3. ***Caraterísticas Generales***
 - **Declarativo**: React hace que sea sencillo crear interfaces de usuario interactivas. Diseña vistas simples para cada estado de tu aplicación, y React actualizará y renderizará eficientemente los componentes correctos cuando cambien los datos. Las vistas declarativas hacen que el código sea más predecible, más sencillo de entender y más fácil de depurar.
 - **Basado en componentes**: Crea componentes encapsulados que administran su propio estado y luego organizalos para crear interfaces de usuario complejas. Dado que la lógica de componentes está escrita en JavaScript y no sobre plantillas, puedes manejar fácilmente datos enriquecidos a través de la aplicación y mantener el estado fuera del DOM.
 - **Aprende solamente una vez, escribe código donde sea**: Puedes desarrollar nuevas funciones en React sin reescribir el código existente. React también puede renderizarse sobre el servidor a través de Node JS y permite potenciar tus aplicaciones móviles usando React Native.
 
 Lin https://es.reactjs.org/
 
-## Q. ***Create React App***
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+
+## 4. ***Create React App***
 
 Necesitarás tener Node >= 14.0.0 y npm >= 5.6 instalados en tu máquina. Para crear un proyecto ejecuta:
 
@@ -47,7 +64,12 @@ npm run build
 ```
 lo cual crea una compilación optimizada de tu aplicación en el directorio build
 
-## Q. ***Qué es el Dom?***
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+
+## 5. ***Qué es el Dom?***
 
 **Document Object Model** 
 EL DOM posee una estructura en forma de árbol:
@@ -57,10 +79,14 @@ EL DOM posee una estructura en forma de árbol:
 
 Esto provoca que cada vez que modificamos un elemento dentro de él, todos sus hijos tengan que ser pintados de nuevo (hayan o no cambiado). Y justo este proceso es el que provoca los problemas de rendimiento. Por tanto, cuantos más elementos queden por debajo de nuestro elemento modificado en la estructura del DOM más elementos tendrán que ser vueltos a pintar en la interfaz gráfica.
 
-## Q. ***Dom Virtual vs Dom Real***
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## 6. ***Dom Virtual vs Dom Real***
 
 
-## Q. ***Qué es un componente?***
+## 7. ***Qué es un componente?***
 
 Los componentes son bloques de construcción. Un componente es una clase o función de JavaScript que opcionalmente acepta entradas, es decir, propiedades (accesorios) y devuelve un elemento React que describe cómo debería aparecer una sección de la interfaz de usuario (interfaz de usuario).
 
@@ -75,6 +101,10 @@ class Welcome extends React.Component {
   }
 }
 ```
+
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
 
 ## JSX
 
