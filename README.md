@@ -7,8 +7,10 @@
 | 02. |[Historia](#3-historia) |
 | 03. |[Caraterísticas Generales](#3-caraterísticas-generales) |
 | 04. |[Create React App](#4-create-react-app) |
-
-
+| 05. |[Dom](#5-dom) |
+| 06. |[Dom Virtual vs Dom Real](#6-dom-virtual-vs-dom-real) |
+| 07. |[Qué es un componente?](#6-dom-virtual-vs-dom-real) |
+| 07. |[Qué es un componente?](#6-dom-virtual-vs-dom-real) |
 <br/>
 
 ## 1. ***React Introducción***
@@ -69,7 +71,7 @@ lo cual crea una compilación optimizada de tu aplicación en el directorio buil
 </div>
 
 
-## 5. ***Qué es el Dom?***
+## 5. ***Dom***
 
 **Document Object Model** 
 EL DOM posee una estructura en forma de árbol:
@@ -86,6 +88,9 @@ Esto provoca que cada vez que modificamos un elemento dentro de él, todos sus h
 ## 6. ***Dom Virtual vs Dom Real***
 
 
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
 ## 7. ***Qué es un componente?***
 
 Los componentes son bloques de construcción. Un componente es una clase o función de JavaScript que opcionalmente acepta entradas, es decir, propiedades (accesorios) y devuelve un elemento React que describe cómo debería aparecer una sección de la interfaz de usuario (interfaz de usuario).
@@ -97,7 +102,7 @@ Una aplicación de React está formada por varios componentes, cada uno de los c
 ```js
 class Welcome extends React.Component {
   render() {
-    return <h1>Hello, World!</h1>
+    return <h1>Hola, Mundo!</h1>
   }
 }
 ```
@@ -106,11 +111,54 @@ class Welcome extends React.Component {
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## JSX
+## 8. ***¿Cuál es la diferencia entre componente y contenedor en React?***
+
+Los componentes de presentación están relacionados con la apariencia, los componentes del contenedor están relacionados con hacer que las cosas funcionen.
+
+Por ejemplo, este es un componente de presentación. Obtiene datos de sus accesorios y solo se enfoca en mostrar un elemento.
+
+```js
+const Users = props => (
+  <ul>
+    {props.users.map(user => (
+      <li>{user}</li>
+    ))}
+  </ul>
+)
+```
+
+Por otro lado, este es un componente contenedor. Gestiona y almacena sus propios datos y utiliza el componente de presentación para mostrarlos.
+
+```js
+class UsersContainer extends React.Component {
+  constructor() {
+    this.state = {
+      users: []
+    }
+  }
+
+  componentDidMount() {
+    axios.get('/users').then(users =>
+      this.setState({ users: users }))
+    )
+  }
+
+  render() {
+    return <Users users={this.state.users} />
+  }
+}
+```
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
+
+## 9. ***JSX***
 
 React utiliza una sintaxis basada en XML (similar al HTML) para construir sus componentes usando el Virtual DOM
 
-
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
 ## Tips!
 - Solo puede haber un element padre
 - La etiqueta class se llama className porque es una palabra reservada para react (class)
