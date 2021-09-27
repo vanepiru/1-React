@@ -1,12 +1,12 @@
 
 <br/>
 
-|Sl.No|   Questions                                              |
+                                                 
 |-----|----------------------------------------------------------|
 | 01. |[React Introduccion](#q-what-is-reactjs)|
-| 02. |[Historia]||
-| 03. |[Caraterísticas Generales]#q-carater%C3%ADsticas-generales |
-| 04. |[Create React App]|
+| 02. |[Historia](#q-historia)|
+| 03. |[Caraterísticas Generales](#q-carater%C3%ADsticas-generales) |
+| 04. |[Create React App](#q-create-react-app)|
 
 
 <br/>
