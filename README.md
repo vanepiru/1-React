@@ -12,10 +12,10 @@
 | 07. |[Qué es un componente?](#7-qué-es-un-componente) |
 | 08. |[¿Cuál es la diferencia entre componente y contenedor en React?](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
 | 09. |[jsx](#9-jsx) |
-| 10. |[](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 11. |[](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 12. |[](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 13. |[](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 10. |[Tips](#10-tips) |
+| 11. |[props](#11-props) |
+| 12. |[](#12-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 13. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
 <br/>
 
 ## 1. ***React Introducción***
@@ -198,8 +198,11 @@ import MyComponent from "./components/ejemplo_props";
 
 const app = document.getElementById('app');
 ReactDOM.render(<MyComponent name = "jose" anos = "22" /> , app);
+
+```
 Otra forma de hacerlo sería pasando las propiedades por defecto
 
+```js
 import React from 'react';
 import ReactDOM from 'react-dom';
 
