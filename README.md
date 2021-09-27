@@ -1,12 +1,12 @@
 
 <br/>
 
-|Sl.No|   Questions                                              |                                                
+| |  Contenido                                           |                                                
 |-----|----------------------------------------------------------|
-| 01. |[React Introduccion](#q-what-is-reactjs) |
+| 01. |[React Introduccion](#1-react-introducción) |
 | 02. |[Historia](#3-historia) |
 | 03. |[Caraterísticas Generales](#3-caraterísticas-generales) |
-| 04. |[Create React App]|
+| 04. |[Create React App](#4-create-react-app) |
 
 
 <br/>
@@ -17,7 +17,7 @@ El principal objetivo de ReactJS es desarrollar interfaces de usuario (UI) que m
 
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#">↥ Volver al inicio</a></b>
 </div>
 
 
@@ -30,7 +30,7 @@ El principal objetivo de ReactJS es desarrollar interfaces de usuario (UI) que m
 
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
 
@@ -42,7 +42,7 @@ El principal objetivo de ReactJS es desarrollar interfaces de usuario (UI) que m
 Lin https://es.reactjs.org/
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
 
@@ -65,7 +65,7 @@ npm run build
 lo cual crea una compilación optimizada de tu aplicación en el directorio build
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
 
@@ -80,7 +80,7 @@ EL DOM posee una estructura en forma de árbol:
 Esto provoca que cada vez que modificamos un elemento dentro de él, todos sus hijos tengan que ser pintados de nuevo (hayan o no cambiado). Y justo este proceso es el que provoca los problemas de rendimiento. Por tanto, cuantos más elementos queden por debajo de nuestro elemento modificado en la estructura del DOM más elementos tendrán que ser vueltos a pintar en la interfaz gráfica.
 
 <div align="right">
-    <b><a href="#">↥ back to top</a></b>
+    <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
 ## 6. ***Dom Virtual vs Dom Real***
