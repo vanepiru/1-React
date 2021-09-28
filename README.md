@@ -16,6 +16,10 @@
 | 11. |[props](#11-props) |
 | 12. |[](#12-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
 | 13. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 14. |[](#12-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 15. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 16. |[](#12-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 17. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
 <br/>
 
 ## 1. ***React Introducción***
