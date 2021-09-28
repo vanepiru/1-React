@@ -11,13 +11,13 @@
 | 06. |[Dom Virtual vs Dom Real](#6-dom-virtual-vs-dom-real) |
 | 07. |[Qué es un componente?](#7-qué-es-un-componente) |
 | 08. |[¿Cuál es la diferencia entre componente y contenedor en React?](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 09. |[jsx](#9-jsx) |
+| 09. |[Jsx](#9-jsx) |
 | 10. |[Tips](#10-tips) |
-| 11. |[props](#11-props) |
-| 12. |[](#12-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 11. |[Props](#11-props) |
+| 12. |[Cómo importar y exportar componentes usando React.js](#12-cómo-importar-y-exportar-componentes-usando-reactjs) |
 | 13. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 14. |[](#12-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 15. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 14. |[¿Qué diferencia existe entre elemento y componente?](#14-qué-diferencia-existe-entre-elemento-y-componente) |
+| 15. |[Enumere algunas de las principales ventajas y limitaciones de React](#15-enumere-algunas-de-las-principales-ventajas-y-limitaciones-de-react) |
 | 16. |[](#12-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
 | 17. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
 <br/>
@@ -344,7 +344,7 @@ En React, un estado siempre es propiedad de un componente. Cualquier cambio real
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
-### 16. ***¿Por qué React enfatiza el flujo de datos unidireccional?***
+### 16. ***¿Cuáles son las diferencias entre un componente de clase y un componente funcional?***
 ### **Functional Components**  
 
 ** Componentes funcionales **
