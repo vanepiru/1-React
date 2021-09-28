@@ -164,12 +164,17 @@ React utiliza una sintaxis basada en XML (similar al HTML) para construir sus co
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
-## 10. ***Tips!***
+
+## 10. ***Tips***
 - Solo puede haber un element padre
 - La etiqueta class se llama className porque es una palabra reservada para react (class)
 - Los Elementos se deben cerrar
 - Los estilos deben colocarse con un objeto javascript
 - Lo eventos deben también estar con camelCase
+
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
 
 ## 11. ***Props***
 
@@ -222,9 +227,181 @@ ReactDOM.render(
   document.getElementById('app')
 );
 ```
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
 
 ## 12. ***Cómo importar y exportar componentes usando React.js***
 
+```js
+//Importar combinaciones
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
+// Envolver componentes con llaves si no hay exportaciones predeterminadas
+import { Button }  from './Button';
+
+// Default exports ( recommended )
+import  Button  from './Button';
+ 
+class DangerButton extends Component {
+    render()
+    {
+        return <Button color="red" />;
+    }
+}
+
+export default DangerButton; 
+// o export DangerButton;
+```
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
+## 13. ***Cómo crear una tabla dinámica en react***
+
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
+
+## 14. ***¿Qué diferencia existe entre elemento y componente?***
+
+### **React Element**
+
+Es un objeto simple que describe un nodo DOM y sus atributos o propiedades. Es un objeto de descripción inmutable y no se le puede aplicar ningún método.
+
+```js
+const element = <h1>React Element Example!</h1>;
+ReactDOM.render(element, document.getElementById('app'));
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/poPrJLb?editors=1010)**
+
+### 15. ***React Componente***
+
+Es una función o clase que acepta una entrada y devuelve un elemento React. Tiene que mantener referencias a sus nodos DOM y a las instancias de los componentes secundarios.
+
+```js
+function Message() {
+  return <h2>React Component Example!</h2>;
+}
+ReactDOM.render(<Message />, document.getElementById('app'));
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/dyWzoqg?editors=0010)**
+
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
+
+### 15. ***Enumere algunas de las principales ventajas y limitaciones de React***
+
+** Ventajas: **
+
+* Se basa en un dom virtual para saber lo que realmente está cambiando en la interfaz de usuario y volverá a renderizar solo lo que realmente ha cambiado, por lo tanto, un mejor rendimiento.
+* JSX hace que el código de componentes / bloques sea legible. Muestra cómo se conectan o combinan los componentes.
+* El enlace de datos de React establece las condiciones para la creación de aplicaciones dinámicas.
+* Representación rápida. El uso de métodos comprende para minimizar el número de operaciones DOM ayuda a optimizar el proceso de actualización y acelerarlo.
+Comprobable. Las herramientas nativas de React se ofrecen para probar y depurar código.
+* Compatible con SEO. React presenta la experiencia de primera carga mediante la representación del lado del servidor y la conexión de los controladores de eventos del lado del usuario:
+    * Se llama a React.renderComponentToString en el servidor.
+    * React.renderComponent () se llama en el lado del cliente.
+    * React conserva el marcado renderizado en el lado del servidor, adjunta controladores de eventos.
+
+** Limitaciones: **
+
+* Curva de aprendizaje. Al no ser un marco con todas las funciones, se requiere un conocimiento profundo para la integración de la biblioteca gratuita de la interfaz de usuario en el marco MVC.
+* La orientación visual es una de las desventajas de ReactJS. Se debe encontrar 'Modelo' y 'Controlador' para resolver el problema de 'Vista'.
+* No utilizar un enfoque isomórfico para explotar la aplicación conduce a problemas de indexación en los motores de búsqueda.
+
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
+
+### 15. ***¿Por qué React enfatiza el flujo de datos unidireccional?***
+
+También se conoce como flujo de datos unidireccional, lo que significa que los datos tienen una y solo una forma de transferirse a otras partes de la aplicación. En esencia, esto significa que los componentes secundarios no pueden actualizar los datos que provienen del componente principal. En React, los datos que provienen de un padre se denominan ** props **.
+
+En React, esto significa que:
+
+* el estado se pasa a la vista y a los componentes secundarios
+* las acciones son activadas por la vista
+* las acciones pueden actualizar el estado
+* el cambio de estado se pasa a la vista y a los componentes secundarios
+
+La vista es el resultado del estado de la aplicación. El estado solo puede cambiar cuando ocurren acciones. Cuando ocurren acciones, el estado se actualiza. El enlace de datos unidireccional nos proporciona algunas ventajas clave
+
+* Más fácil de depurar, ya que sabemos qué datos provienen de dónde.
+* Menos propenso a errores, ya que tenemos más control sobre nuestros datos.
+* Más eficiente, ya que la biblioteca sabe cuáles son los límites de cada parte del sistema.
+
+En React, un estado siempre es propiedad de un componente. Cualquier cambio realizado por este estado solo puede afectar a los componentes debajo de él, es decir, sus "hijos". Cambiar el estado de un componente nunca afectará a su padre ni a sus hermanos, solo los hijos se verán afectados. Esta es la razón principal por la que el estado a menudo se mueve hacia arriba en el árbol de componentes para que se pueda compartir entre los componentes que necesitan acceder a él.
+
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
+
+### 16. ***¿Por qué React enfatiza el flujo de datos unidireccional?***
+### **Functional Components**  
+
+** Componentes funcionales **
+
+* Los componentes funcionales son funciones básicas de JavaScript. Por lo general, estas son funciones de flecha, pero también se pueden crear con la palabra clave de función normal.
+* A veces se los denomina componentes "sin estado", ya que simplemente aceptan datos y los muestran de alguna forma; es decir, son los principales responsables de renderizar la interfaz de usuario.
+* Los métodos del ciclo de vida de React (por ejemplo, `componentDidMount ()`) no se pueden usar en componentes funcionales.
+* No se utiliza ningún método de renderizado en componentes funcionales.
+* Son los principales responsables de la interfaz de usuario y suelen ser solo de presentación (por ejemplo, un componente de botón).
+* Los componentes funcionales pueden aceptar y utilizar accesorios.
+* Deben favorecerse los componentes funcionales si no necesita hacer uso del estado React.
+
+**Ejemplo:**
+
+```js
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+const element = <Welcome name="World!" />;
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/MWmEmRj?editors=0010)**
+
+### ** Componentes de clase **
+
+* Los componentes de la clase hacen uso de la clase ES6 y amplían la clase Component en React.
+* A veces se denominan componentes "con estado", ya que tienden a implementar lógica y estado.
+* Los métodos del ciclo de vida de React se pueden usar dentro de los componentes de la clase (por ejemplo, `componentDidMount ()`).
+* Pasamos `props` a los componentes de la clase y accedemos a ellos con` this.props`.
+* Los componentes basados ​​en clases pueden tener "referencias" a los nodos DOM subyacentes.
+* Los componentes basados ​​en clases pueden utilizar técnicas de optimización del rendimiento `shouldComponentUpdate ()` y `PureComponent ()`.
+
+**Ejemplo:**
+
+```js
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+
+const element = <Welcome name="World!" />;
+
+ReactDOM.render(
+  element,
+  document.getElementById('root')
+);
+```
+
+**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/BaRwZyB)**
+
+
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
 
 ## Conceptos Adicionales
 
