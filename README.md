@@ -163,7 +163,28 @@ class UsersContainer extends React.Component {
 
 ## 9. ***JSX***
 
-React utiliza una sintaxis basada en XML (similar al HTML) para construir sus componentes usando el Virtual DOM
+SX nos permite escribir elementos HTML en JavaScript y colocarlos en el DOM sin ningún método createElement () o appendChild (). JSX convierte etiquetas HTML en elementos de reacción. React usa JSX para crear plantillas en lugar de JavaScript normal. No es necesario usarlo, sin embargo, a continuación se presentan algunas ventajas que lo acompañan.
+
+Es más rápido porque realiza la optimización al compilar código en JavaScript.
+También es de tipo seguro y la mayoría de los errores se pueden detectar durante la compilación.
+Hace que escribir plantillas sea más fácil y rápido.
+Ejemplo:
+
+'''js
+import React from 'react'
+
+class App extends React.Component {
+
+   render() {
+      return (
+         <div>
+            Hello World!
+         </div>
+      )
+   }
+}
+export default App
+'''
 
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
@@ -269,7 +290,7 @@ export default DangerButton;
 
 ## 14. ***¿Qué diferencia existe entre elemento y componente?***
 
-### **React Element**
+**React Element**
 
 Es un objeto simple que describe un nodo DOM y sus atributos o propiedades. Es un objeto de descripción inmutable y no se le puede aplicar ningún método.
 
@@ -280,7 +301,7 @@ ReactDOM.render(element, document.getElementById('app'));
 
 **&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/poPrJLb?editors=1010)**
 
-### 15. ***React Componente***
+**React Componente**
 
 Es una función o clase que acepta una entrada y devuelve un elemento React. Tiene que mantener referencias a sus nodos DOM y a las instancias de los componentes secundarios.
 
