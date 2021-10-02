@@ -100,6 +100,49 @@ Nodes tree
 
 ## 6. ***Dom Virtual vs Dom Real***
 
+Realizaremos una explicación de forma gráfica. Imaginemonos que disponemos de una tabla con datos en una página HTML.
+
+![image](https://user-images.githubusercontent.com/6796155/135717521-36d33a40-27e3-4bf9-8e82-7d7e16441f68.png)
+
+
+La tabla dispone de en cada fila de un botón de edición. Este botón permite cambiar de forma rápida los datos de la tabla. Por ejemplo podemos pulsar en la última fila y cambiar el dato9 por dato10.
+
+
+![image](https://user-images.githubusercontent.com/6796155/135717536-f1291d45-8db5-4cff-9086-dda8546ef13b.png)
+
+
+Cambios sin VirtualDOM
+¿Como realizamos este operación? . En la mayor parte de las situaciones los desarrolladores optan por una solución similar a lo siguiente. La tabla se crea a partir de un array de objetos , este array de objetos es actualizado cuando editamos. Finalizada la edición la tabla se vuelve a generar.
+
+![image](https://user-images.githubusercontent.com/6796155/135717673-90c70942-af7f-4916-9249-20957f9f61d7.png)
+
+
+Nos encontramos ante un código que funciona correctamente pero que tiene un problema importante. ¿Era necesario volver a generar la tabla entera?. Se trata de una pregunta interesante ya que solo hemos cambiado un dato puntual. La respuesta  es NO. Acabamos de forzar al navegador a redibujar todo el bloque cuando solo un mínimo de información cambiaba.
+
+El concepto de Virtual DOM
+
+Cambiar los nodos de un árbol DOM tiene un coste , cuantos más nodos cambiemos mayor será el coste para el navegador. En situaciones sencillas los problemas de rendimiento no se notan pero cuanto más compleja y grande sea nuestra web estas cosas serán importantes. En este caso nos encontramos con una tabla de datos que define una parte del árbol DOM
+
+ 
+![image](https://user-images.githubusercontent.com/6796155/135717681-8cabfaa9-21a1-4052-98e3-c8fb413968bc.png)
+
+Lamentablemente cuando volvemos a dibujar la tabla estamos cambiando todos los nodos del árbol DOM y volviéndola a renderizar por completo. ¿Cómo funciona un enfoque de virtual DOM? . En este caso el framework o librería que corresponda se encarga de tener una copia de nuestro árbol DOM simplificado en memoria a la cual se denomina VirtualDOM.
+
+![image](https://user-images.githubusercontent.com/6796155/135717720-f23befc5-705d-4396-9d04-8802e8df0187.png)
+
+Una vez que dispone de esta versión del árbol el framework se encarga de estar pendiente de los cambios que se generan sobre él. Siendo capaz de ver las diferencias entre un estado A y un estado B cuando nosotros actualizamos información.
+
+![image](https://user-images.githubusercontent.com/6796155/135717806-4643df79-6aea-4c94-ad04-f2c4f7049321.png)
+
+En este caso solo hemos cambiado un nodo del árbol:
+
+![image](https://user-images.githubusercontent.com/6796155/135717792-8b55a404-5167-435d-8e39-7c93fb6683f6.png)
+
+Con estos cambios mínimos el framework o librería se encargará de actualizar el árbol DOM original sin tenerlo que redibujar completo.
+
+![image](https://user-images.githubusercontent.com/6796155/135717752-484d8692-2eda-4110-832c-24aa8d399b50.png)
+
+Con este tipo de técnicas se reduce al mínimo las renderizados a nivel de navegador. El rendimiento se incrementará de forma considerable.
 
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
