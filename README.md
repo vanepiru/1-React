@@ -128,7 +128,7 @@ Cambiar los nodos de un árbol DOM tiene un coste , cuantos más nodos cambiemos
 
 Lamentablemente cuando volvemos a dibujar la tabla estamos cambiando todos los nodos del árbol DOM y volviéndola a renderizar por completo. ¿Cómo funciona un enfoque de virtual DOM? . En este caso el framework o librería que corresponda se encarga de tener una copia de nuestro árbol DOM simplificado en memoria a la cual se denomina VirtualDOM.
 
-![image](https://user-images.githubusercontent.com/6796155/135717720-f23befc5-705d-4396-9d04-8802e8df0187.png)
+![image](https://user-images.githubusercontent.com/6796155/135717965-5529faf6-743e-487f-bd79-c86eac8f5420.png)
 
 Una vez que dispone de esta versión del árbol el framework se encarga de estar pendiente de los cambios que se generan sobre él. Siendo capaz de ver las diferencias entre un estado A y un estado B cuando nosotros actualizamos información.
 
