@@ -124,7 +124,7 @@ El concepto de Virtual DOM
 Cambiar los nodos de un árbol DOM tiene un coste , cuantos más nodos cambiemos mayor será el coste para el navegador. En situaciones sencillas los problemas de rendimiento no se notan pero cuanto más compleja y grande sea nuestra web estas cosas serán importantes. En este caso nos encontramos con una tabla de datos que define una parte del árbol DOM
 
  
-![image](https://user-images.githubusercontent.com/6796155/135717681-8cabfaa9-21a1-4052-98e3-c8fb413968bc.png)
+![image](https://user-images.githubusercontent.com/6796155/135717934-927f689a-2df0-451a-949a-a7bfd7f1288b.png)
 
 Lamentablemente cuando volvemos a dibujar la tabla estamos cambiando todos los nodos del árbol DOM y volviéndola a renderizar por completo. ¿Cómo funciona un enfoque de virtual DOM? . En este caso el framework o librería que corresponda se encarga de tener una copia de nuestro árbol DOM simplificado en memoria a la cual se denomina VirtualDOM.
 
