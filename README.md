@@ -211,7 +211,7 @@ class UsersContainer extends React.Component {
 
 ## 9. ***JSX***
 
-SX nos permite escribir elementos HTML en JavaScript y colocarlos en el DOM sin ningún método createElement () o appendChild (). JSX convierte etiquetas HTML en elementos de reacción. React usa JSX para crear plantillas en lugar de JavaScript normal. No es necesario usarlo, sin embargo, a continuación se presentan algunas ventajas que lo acompañan.
+JSX nos permite escribir elementos HTML en JavaScript y colocarlos en el DOM sin ningún método createElement () o appendChild (). JSX convierte etiquetas HTML en elementos de reacción. React usa JSX para crear plantillas en lugar de JavaScript normal. No es necesario usarlo, sin embargo, a continuación se presentan algunas ventajas que lo acompañan.
 
 Es más rápido porque realiza la optimización al compilar código en JavaScript.
 También es de tipo seguro y la mayoría de los errores se pueden detectar durante la compilación.
