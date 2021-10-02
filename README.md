@@ -36,8 +36,7 @@ El principal objetivo de ReactJS es desarrollar interfaces de usuario (UI) que m
 - Creado por Jordan Walke, un ingeniero en software de Facebook
 - Implementado en las noticias de Facebook en 2011 y luego por instagram en 2012
 - Fue de código abierto en JSConf US en mayo de 2013
-- El 18 de abril de 2017, Facebook anunció React Fiber
-- El 26 de septiembre de 2017, React 16.0 fue lanzado al público. El 16 de febrero de 2019, React 16.8 fue lanzado al público
+- El 26 de septiembre de 2017 fue lanzado al público React 16.0 y El 16 de febrero de 2019,  React 16.8.
 
 
 <div align="right">
@@ -45,10 +44,10 @@ El principal objetivo de ReactJS es desarrollar interfaces de usuario (UI) que m
 </div>
 
 
-## 3. ***Caraterísticas Generales***
+## 3. ***Caraterísticas Principales***
+
 - **Declarativo**: React hace que sea sencillo crear interfaces de usuario interactivas. Diseña vistas simples para cada estado de tu aplicación, y React actualizará y renderizará eficientemente los componentes correctos cuando cambien los datos. Las vistas declarativas hacen que el código sea más predecible, más sencillo de entender y más fácil de depurar.
 - **Basado en componentes**: Crea componentes encapsulados que administran su propio estado y luego organizalos para crear interfaces de usuario complejas. Dado que la lógica de componentes está escrita en JavaScript y no sobre plantillas, puedes manejar fácilmente datos enriquecidos a través de la aplicación y mantener el estado fuera del DOM.
-- **Aprende solamente una vez, escribe código donde sea**: Puedes desarrollar nuevas funciones en React sin reescribir el código existente. React también puede renderizarse sobre el servidor a través de Node JS y permite potenciar tus aplicaciones móviles usando React Native.
 
 Lin https://es.reactjs.org/
 
@@ -83,12 +82,17 @@ lo cual crea una compilación optimizada de tu aplicación en el directorio buil
 ## 5. ***Dom***
 
 **Document Object Model** 
-EL DOM posee una estructura en forma de árbol:
 
-![image](https://user-images.githubusercontent.com/6796155/134211026-31e3c56f-f7dc-4946-8b42-44486ea9e99a.png)
+El DOM, acrónimo de Document Object Model, es la herramienta base para manipular cualquier página web. El DOM es generado por el navegador que uses (Chrome, Firefox, etc) en el momento en que el documento HTML de una web se carga.
+Ese documento HTML de una web se carga en un navegador, el navegador crea un objeto (un Document Object) basado en dicho documento HTML. Este Document Object contiene múltiples propiedades y métodos que nos permiten interactuar con esa web usando nuestro código JS.
 
+A ese objeto creado por el navegador, con todas sus propiedades y métodos, se le llama el ​Document Object Model.
 
-Esto provoca que cada vez que modificamos un elemento dentro de él, todos sus hijos tengan que ser pintados de nuevo (hayan o no cambiado). Y justo este proceso es el que provoca los problemas de rendimiento. Por tanto, cuantos más elementos queden por debajo de nuestro elemento modificado en la estructura del DOM más elementos tendrán que ser vueltos a pintar en la interfaz gráfica.
+![image](https://user-images.githubusercontent.com/6796155/135715642-cbed0acb-bcc2-468f-8754-4324921cee8f.png)
+
+El DOM estructura nuestra web en HTML nodes (nodos), donde cada etiqueta de HTML sería un node que podría tener etiquetas "hijas", formando así una estructura de árbol, o jerarquía de nodos. 
+
+Nodes tree
 
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
