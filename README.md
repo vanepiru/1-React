@@ -147,13 +147,14 @@ Con este tipo de técnicas se reduce al mínimo las renderizados a nivel de nave
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
+
 ## 7. ***Qué es un componente?***
 
-Los componentes son bloques de construcción. Un componente es una clase o función de JavaScript que opcionalmente acepta entradas, es decir, propiedades (accesorios) y devuelve un elemento React que describe cómo debería aparecer una sección de la interfaz de usuario (interfaz de usuario).
+Los componentes son bloques de construcción. Un componente es una clase o función de JavaScript que opcionalmente acepta entradas, es decir, propiedades (prop) y devuelve un elemento React que describe cómo debería aparecer una sección de la interfaz de usuario (interfaz de usuario).
 
 Una aplicación de React está formada por varios componentes, cada uno de los cuales es responsable de generar un fragmento de HTML pequeño y reutilizable. Los componentes se pueden anidar dentro de otros componentes para permitir la construcción de aplicaciones complejas a partir de bloques de construcción simples.
 
-**Ejemplo:** Class Component
+Class Component
 
 ```js
 class Welcome extends React.Component {
