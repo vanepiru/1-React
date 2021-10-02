@@ -183,7 +183,7 @@ const Users = props => (
   </ul>
 )
 ```
-
+ 
 Por otro lado, este es un componente contenedor. Gestiona y almacena sus propios datos y utiliza el componente de presentación para mostrarlos.
 
 ```js
