@@ -172,7 +172,7 @@ class Welcome extends React.Component {
 
 Los componentes de presentación están relacionados con la apariencia, los componentes del contenedor están relacionados con hacer que las cosas funcionen.
 
-Por ejemplo, este es un componente de presentación. Obtiene datos de sus accesorios y solo se enfoca en mostrar un elemento.
+Por ejemplo, este es un componente de presentación. Obtiene datos de sus props y solo se enfoca en mostrar un elemento.
 
 ```js
 const Users = props => (
@@ -261,7 +261,7 @@ import ReactDOM from 'react-dom';
 
 class MyComponent extends React.Component{
   render(){
-    return <div>Me llamo {this.props.name} y tengo {this.props.anos}</div>
+    return <div>Me llamo {this.props.name} y tengo {this.props.edad}</div>
   }
 }
 
@@ -330,6 +330,7 @@ export default DangerButton;
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
+
 ## 13. ***Cómo crear una tabla dinámica en react***
 
 <div align="right">
@@ -361,53 +362,6 @@ ReactDOM.render(<Message />, document.getElementById('app'));
 ```
 
 **&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/dyWzoqg?editors=0010)**
-
-<div align="right">
-    <b><a href="#">↥  Volver al inicio</a></b>
-</div>
-
-### 15. ***Enumere algunas de las principales ventajas y limitaciones de React***
-
-** Ventajas: **
-
-* Se basa en un dom virtual para saber lo que realmente está cambiando en la interfaz de usuario y volverá a renderizar solo lo que realmente ha cambiado, por lo tanto, un mejor rendimiento.
-* JSX hace que el código de componentes / bloques sea legible. Muestra cómo se conectan o combinan los componentes.
-* El enlace de datos de React establece las condiciones para la creación de aplicaciones dinámicas.
-* Representación rápida. El uso de métodos comprende para minimizar el número de operaciones DOM ayuda a optimizar el proceso de actualización y acelerarlo.
-Comprobable. Las herramientas nativas de React se ofrecen para probar y depurar código.
-* Compatible con SEO. React presenta la experiencia de primera carga mediante la representación del lado del servidor y la conexión de los controladores de eventos del lado del usuario:
-    * Se llama a React.renderComponentToString en el servidor.
-    * React.renderComponent () se llama en el lado del cliente.
-    * React conserva el marcado renderizado en el lado del servidor, adjunta controladores de eventos.
-
-** Limitaciones: **
-
-* Curva de aprendizaje. Al no ser un marco con todas las funciones, se requiere un conocimiento profundo para la integración de la biblioteca gratuita de la interfaz de usuario en el marco MVC.
-* La orientación visual es una de las desventajas de ReactJS. Se debe encontrar 'Modelo' y 'Controlador' para resolver el problema de 'Vista'.
-* No utilizar un enfoque isomórfico para explotar la aplicación conduce a problemas de indexación en los motores de búsqueda.
-
-<div align="right">
-    <b><a href="#">↥  Volver al inicio</a></b>
-</div>
-
-### 15. ***¿Por qué React enfatiza el flujo de datos unidireccional?***
-
-También se conoce como flujo de datos unidireccional, lo que significa que los datos tienen una y solo una forma de transferirse a otras partes de la aplicación. En esencia, esto significa que los componentes secundarios no pueden actualizar los datos que provienen del componente principal. En React, los datos que provienen de un padre se denominan ** props **.
-
-En React, esto significa que:
-
-* el estado se pasa a la vista y a los componentes secundarios
-* las acciones son activadas por la vista
-* las acciones pueden actualizar el estado
-* el cambio de estado se pasa a la vista y a los componentes secundarios
-
-La vista es el resultado del estado de la aplicación. El estado solo puede cambiar cuando ocurren acciones. Cuando ocurren acciones, el estado se actualiza. El enlace de datos unidireccional nos proporciona algunas ventajas clave
-
-* Más fácil de depurar, ya que sabemos qué datos provienen de dónde.
-* Menos propenso a errores, ya que tenemos más control sobre nuestros datos.
-* Más eficiente, ya que la biblioteca sabe cuáles son los límites de cada parte del sistema.
-
-En React, un estado siempre es propiedad de un componente. Cualquier cambio realizado por este estado solo puede afectar a los componentes debajo de él, es decir, sus "hijos". Cambiar el estado de un componente nunca afectará a su padre ni a sus hermanos, solo los hijos se verán afectados. Esta es la razón principal por la que el estado a menudo se mueve hacia arriba en el árbol de componentes para que se pueda compartir entre los componentes que necesitan acceder a él.
 
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
