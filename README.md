@@ -308,7 +308,8 @@ ReactDOM.render(
 ## 12. ***Comentarios en react y jsx***
 
 React comentarios:
-'''js
+
+```js
 function App() {
 
   // Single line Comment
@@ -323,10 +324,11 @@ function App() {
     <h1>My Application</h1>
   );
 }
+```
 
-'''
 JSX comentarios:
-'''js
+
+```js
 export default function App() {
   return (
     <div>
@@ -335,16 +337,9 @@ export default function App() {
     </div>
   );
 }
-'''
+```
 
-
-## 13. ***Cómo crear una tabla dinámica en react***
-
-<div align="right">
-    <b><a href="#">↥  Volver al inicio</a></b>
-</div>
-
-## 14. ***¿Qué diferencia existe entre elemento y componente?***
+## 13. ***¿Qué diferencia existe entre elemento y componente?***
 
 **React Element**
 
@@ -374,68 +369,18 @@ ReactDOM.render(<Message />, document.getElementById('app'));
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
-### 16. ***¿Cuáles son las diferencias entre un componente de clase y un componente funcional?***
-### **Componente Funcional**
+## 14. ***¿Qué es state en React?*** 
 
-* Los componentes funcionales son funciones básicas de JavaScript. Por lo general, estas son funciones con flecha, pero también se pueden crear con la palabra clave de función normal.
-* A veces se los denomina componentes "sin estado", ya que simplemente aceptan datos y los muestran de alguna forma; es decir, son los principales responsables de renderizar la interfaz de usuario.
-* Los métodos del ciclo de vida de React (por ejemplo, `componentDidMount ()`) no se pueden usar en componentes funcionales.
-* No se utiliza ningún método de renderizado en componentes funcionales.
-* Son los principales responsables de la interfaz de usuario y suelen ser solo de presentación (por ejemplo, un componente de botón).
-* Los componentes funcionales pueden aceptar y utilizar prop.
-* 
-**Ejemplo:**
-
-```js
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-
-const element = <Welcome name="World!" />;
-
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
-```
-
-**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/MWmEmRj?editors=0010)**
-
-### ** Componentes de clase **
-
-* Los componentes de la clase hacen uso de la clase ES6 y amplían la clase Component en React.
-* A veces se denominan componentes "con estado", ya que tienden a implementar lógica y estado.
-* Los métodos del ciclo de vida de React se pueden usar dentro de los componentes de la clase (por ejemplo, `componentDidMount ()`).
-* Pasamos `props` a los componentes de la clase y accedemos a ellos con` this.props`.
-* Los componentes basados ​​en clases pueden tener "referencias" a los nodos DOM subyacentes.
-* Los componentes basados ​​en clases pueden utilizar técnicas de optimización del rendimiento `shouldComponentUpdate ()` y `PureComponent ()`.
-
-**Ejemplo:**
-
-```js
-class Welcome extends React.Component {
-  render() {
-    return <h1>Hello, {this.props.name}</h1>;
-  }
-}
-
-const element = <Welcome name="World!" />;
-
-ReactDOM.render(
-  element,
-  document.getElementById('root')
-);
-```
-
-**&#9885; [Try this example on CodeSandbox](https://codepen.io/learning-zone/pen/BaRwZyB)**
-
+Son datos que se mantienen dentro de un componente, los cuales son locales o pertenece a ese componente específico.
+El propio componente actualizará el estado usando la función `setState ()`.
 
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
+
 ## Conceptos Adicionales
 
-- **Un gestor de paquetes como Yarn o npm**. Este te permite aprovechar el vasto ecosistema de paquetes de terceros, e instalarlos o actualizarlos de una manera fácil.
--	**Un empaquetador como webpack o Parcel**. Este te permite escribir código modular y empaquetarlo junto en paquetes más pequeños que optimizan el tiempo de carga.
-- **Un compilador como Babel**. Este te permite escribir Javascript moderno que aún así funciona en navegadores más antiguos.
+-**Un gestor de paquetes como Yarn o npm**. Permite aprovechar un vasto ecosistema de paquetes de terceros, e instalarlos o actualizarlos de una manera fácil.
+-**Un empaquetador como webpack o Parcel**. Permite escribir código modular y empaquetarlo junto en paquetes más pequeños que optimizan el tiempo de carga.
+-**Un compilador como Babel**. Permite escribir Javascript moderno que aún así funciona en navegadores más antiguos.
