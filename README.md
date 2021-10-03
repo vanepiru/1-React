@@ -304,32 +304,39 @@ ReactDOM.render(
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
-## 12. ***Cómo importar y exportar componentes usando React.js***
 
-```js
-//Importar combinaciones
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+## 12. ***Comentarios en react y jsx***
 
-// Envolver componentes con llaves si no hay exportaciones predeterminadas
-import { Button }  from './Button';
+React comentarios:
+'''js
+function App() {
 
-// Default exports ( recommended )
-import  Button  from './Button';
- 
-class DangerButton extends Component {
-    render()
-    {
-        return <Button color="red" />;
-    }
+  // Single line Comment
+
+  /*
+  * multi
+  * line
+  * comment
+  **/
+
+  return (
+    <h1>My Application</h1>
+  );
 }
 
-export default DangerButton; 
-// o export DangerButton;
-```
-<div align="right">
-    <b><a href="#">↥  Volver al inicio</a></b>
-</div>
+'''
+JSX comentarios:
+'''js
+export default function App() {
+  return (
+    <div>
+      {/* A JSX comment */}
+      <h1>My Application</h1>
+    </div>
+  );
+}
+'''
+
 
 ## 13. ***Cómo crear una tabla dinámica en react***
 
@@ -368,18 +375,15 @@ ReactDOM.render(<Message />, document.getElementById('app'));
 </div>
 
 ### 16. ***¿Cuáles son las diferencias entre un componente de clase y un componente funcional?***
-### **Functional Components**  
+### **Componente Funcional**
 
-** Componentes funcionales **
-
-* Los componentes funcionales son funciones básicas de JavaScript. Por lo general, estas son funciones de flecha, pero también se pueden crear con la palabra clave de función normal.
+* Los componentes funcionales son funciones básicas de JavaScript. Por lo general, estas son funciones con flecha, pero también se pueden crear con la palabra clave de función normal.
 * A veces se los denomina componentes "sin estado", ya que simplemente aceptan datos y los muestran de alguna forma; es decir, son los principales responsables de renderizar la interfaz de usuario.
 * Los métodos del ciclo de vida de React (por ejemplo, `componentDidMount ()`) no se pueden usar en componentes funcionales.
 * No se utiliza ningún método de renderizado en componentes funcionales.
 * Son los principales responsables de la interfaz de usuario y suelen ser solo de presentación (por ejemplo, un componente de botón).
-* Los componentes funcionales pueden aceptar y utilizar accesorios.
-* Deben favorecerse los componentes funcionales si no necesita hacer uso del estado React.
-
+* Los componentes funcionales pueden aceptar y utilizar prop.
+* 
 **Ejemplo:**
 
 ```js
