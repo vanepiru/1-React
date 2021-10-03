@@ -14,7 +14,7 @@
 | 09. |[Jsx](#9-jsx) |
 | 10. |[Tips](#10-tips) |
 | 11. |[Props](#11-props) |
-| 12. |[Cómo importar y exportar componentes usando React.js](#12-cómo-importar-y-exportar-componentes-usando-reactjs) |
+| 12. |[Comentarios en react y jsx](https://github.com/vanepiru/react/blob/main/README.md#12-comentarios-en-react-y-jsx) |
 | 13. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
 | 14. |[¿Qué diferencia existe entre elemento y componente?](#14-qué-diferencia-existe-entre-elemento-y-componente) |
 | 15. |[Enumere algunas de las principales ventajas y limitaciones de React](#15-enumere-algunas-de-las-principales-ventajas-y-limitaciones-de-react) |
