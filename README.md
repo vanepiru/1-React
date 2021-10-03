@@ -378,6 +378,83 @@ El propio componente actualizará el estado usando la función `setState ()`.
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
+## 15. ***¿Qué son los componenentes controlados y no controlados en react?*** 
+
+En un componente controlado, los datos del formulario son manejados por un componente React. La alternativa son los componentes no controlados, donde los datos del formulario son manejados por el propio DOM.
+
+** Componentes controlados **
+
+En un componente controlado, los datos del formulario son manejados por el estado dentro del componente. El estado dentro del componente sirve como "la única fuente de verdad" para los elementos de entrada que son representados por el componente.
+
+
+```js
+import React, { Component } from 'react'
+
+class App extends Component {
+    state = {
+        message: ''
+    }
+    updateMessage = (newText) => {
+        console.log(newText)
+        this.setState(() => ({
+            message: newText
+        }))
+    }
+    render() {
+        return (
+            <div className="App">
+                <div className="container">
+                    <input type="text"
+                        placeholder="Your message here.."
+                        value={this.state.message}
+                        onChange={(event) => this.updateMessage(event.target.value)}
+                    />
+                    <p>the message is: {this.state.message}</p>
+                </div>
+            </div>
+        )
+    }
+}
+
+export default App
+```
+
+** Componentes no controlados **
+
+Los componentes no controlados actúan más como elementos de formulario HTML tradicionales. Los datos de cada elemento de entrada se almacenan en el DOM, no en el componente. En lugar de escribir un controlador de eventos para todas sus actualizaciones de estado, utiliza `ref` para recuperar valores del DOM. `Refs` proporciona una forma de acceder a los nodos DOM o los elementos React creados en el método de renderizado.
+
+```js
+import React, { Component } from 'react'
+
+class App extends Component {
+
+    constructor(props){
+        super(props)
+        this.handleChange = this.handleChange.bind(this)
+        this.input = React.createRef()
+    }
+    handleChange = (newText) => {
+        console.log(newText)
+    }
+    render() {
+        return (
+            <div className="App">
+                <div className="container">
+                    <input type="text"
+                        placeholder="Your message here.."
+                        ref={this.input}
+                        onChange={(event) => this.handleChange(event.target.value)}
+                    />
+                </div>
+            </div>
+        )
+    }
+}
+export default App
+```
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
 
 ## Conceptos Adicionales
 
