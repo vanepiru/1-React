@@ -376,13 +376,25 @@ un almacén de datos mutable de componentes y que además son autónomos. O sea,
 El propio componente actualizará el estado usando la función `setState ()`.
 La típica utilización de los estados sería en tu componente de reloj, en que necesitas actualizar periódicamente la vista con los segundos.
 
+```js
+class TodoApp extends React.Component {
+
+    this.state = {items: []}
+};
+```
+
+como se cambia un estado
+
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
-## 15. ***¿Qué es state en React?*** 
+## 15. ***PropType*** 
 
+class TodoApp extends React.Component {
 
+    this.state = {items: []}
+};
 
 ## Conceptos Adicionales
 
