@@ -10,16 +10,12 @@
 | 05. |[Dom](#5-dom) |
 | 06. |[Dom Virtual vs Dom Real](#6-dom-virtual-vs-dom-real) |
 | 07. |[Qué es un componente?](#7-qué-es-un-componente) |
-| 08. |[¿Cuál es la diferencia entre componente y contenedor en React?](#8-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 09. |[Jsx](#9-jsx) |
-| 10. |[Tips](#10-tips) |
-| 11. |[Props](#11-props) |
-| 12. |[Comentarios en react y jsx](https://github.com/vanepiru/react/blob/main/README.md#12-comentarios-en-react-y-jsx) |
-| 13. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 14. |[¿Qué diferencia existe entre elemento y componente?](#14-qué-diferencia-existe-entre-elemento-y-componente) |
-| 15. |[Enumere algunas de las principales ventajas y limitaciones de React](#15-enumere-algunas-de-las-principales-ventajas-y-limitaciones-de-react) |
-| 16. |[](#12-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 17. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 08. |[Jsx](#8-jsx) |
+| 09. |[Tips](#9-tips) |
+| 10. |[Props](#10-props) |
+| 11. |[Comentarios en react y jsx](https://github.com/vanepiru/react/blob/main/README.md#11-comentarios-en-react-y-jsx) |
+| 12. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
+| 13. |[¿Qué diferencia existe entre elemento y componente?](#13-qué-diferencia-existe-entre-elemento-y-componente) |
 <br/>
 
 ## 1. ***React Introducción***
@@ -167,49 +163,9 @@ class Welcome extends React.Component {
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
+>
 
-## 8. ***¿Cuál es la diferencia entre componente y contenedor en React?***
-
-Los componentes de presentación están relacionados con la apariencia, los componentes del contenedor están relacionados con hacer que las cosas funcionen.
-
-Por ejemplo, este es un componente de presentación. Obtiene datos de sus props y solo se enfoca en mostrar un elemento.
-
-```js
-const Users = props => (
-  <ul>
-    {props.users.map(user => (
-      <li>{user}</li>
-    ))}
-  </ul>
-)
-```
- 
-Por otro lado, este es un componente contenedor. Gestiona y almacena sus propios datos y utiliza el componente de presentación para mostrarlos.
-
-```js
-class UsersContainer extends React.Component {
-  constructor() {
-    this.state = {
-      users: []
-    }
-  }
-
-  componentDidMount() {
-    axios.get('/users').then(users =>
-      this.setState({ users: users }))
-    )
-  }
-
-  render() {
-    return <Users users={this.state.users} />
-  }
-}
-```
-<div align="right">
-    <b><a href="#">↥  Volver al inicio</a></b>
-</div>
-
-## 9. ***JSX***
+## 8. ***JSX***
 
 JSX nos permite escribir elementos HTML en JavaScript y colocarlos en el DOM sin ningún método createElement () o appendChild (). JSX convierte etiquetas HTML en elementos de reacción. React usa JSX para crear plantillas en lugar de JavaScript normal. No es necesario usarlo, sin embargo, a continuación se presentan algunas ventajas que lo acompañan.
 
@@ -238,7 +194,7 @@ export default App
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
-## 10. ***Tips***
+## 9. ***Tips***
 - Solo puede haber un element padre
 - La etiqueta class se llama className porque es una palabra reservada para react (class)
 - Los Elementos se deben cerrar
@@ -249,7 +205,7 @@ export default App
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
-## 11. ***Props***
+## 10. ***Props***
 
 Las propiedades de un componente se pueden definir como los atributos de configuración para dicho componente. Son recibidos desde un nivel superior (normalmente al instanciar el componente) y por definición son inmutables, es decir, un componente no puede cambiar sus propias props.
 
@@ -305,7 +261,7 @@ ReactDOM.render(
 </div>
 
 
-## 12. ***Comentarios en react y jsx***
+## 11. ***Comentarios en react y jsx***
 
 React comentarios:
 
@@ -339,7 +295,7 @@ export default function App() {
 }
 ```
 
-## 13. ***¿Qué diferencia existe entre elemento y componente?***
+## 12. ***¿Qué diferencia existe entre elemento y componente?***
 
 **React Element**
 
@@ -369,7 +325,7 @@ ReactDOM.render(<Message />, document.getElementById('app'));
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
-## 14. ***¿Qué es state en React?*** 
+## 13. ***¿Qué es state en React?*** 
 
 Son datos que se mantienen dentro de un componente, los cuales son locales o pertenece a ese componente específico.
 un almacén de datos mutable de componentes y que además son autónomos. O sea, el estado pertenece una clase autónoma que cualquiera pueda importar y usar en su aplicación.
