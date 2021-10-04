@@ -16,6 +16,7 @@
 | 11. |[Comentarios en react y jsx](https://github.com/vanepiru/react/blob/main/README.md#11-comentarios-en-react-y-jsx) |
 | 12. |[¿Qué diferencia existe entre elemento y componente?](https://github.com/vanepiru/react/blob/main/README.md#12-qu%C3%A9-diferencia-existe-entre-elemento-y-componente) |
 | 13. |[¿Qué es state en React?](https://github.com/vanepiru/react/blob/main/README.md#13-qu%C3%A9-es-state-en-react) |
+| 14. |[Constructor de un Componente](https://github.com/vanepiru/react/blob/main/README.md#13-qu%C3%A9-es-state-en-react) |
 <br/>
 
 ## 1. ***React Introducción***
@@ -332,22 +333,37 @@ un almacén de datos mutable de componentes y que además son autónomos. O sea,
 El propio componente actualizará el estado usando la función `setState ()`.
 La típica utilización de los estados sería en tu componente de reloj, en que necesitas actualizar periódicamente la vista con los segundos.
 
-```js
-class TodoApp extends React.Component {
-
-    this.state = {items: []}
-};
-```
-
 
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
 
+## 14. ***Constructor de un Componente***
+
+Normalmente, los constructores de React sólo se utilizan para dos propósitos:
+
+-**Para inicializar un estado local asignando un objeto al this.state.
+-**Para enlazar manejadores de eventos a una instancia.
+-**No debes llamar setState() en el constructor(). En su lugar, si su componente necesita usar el estado local, asigna directamente el estado inicial al this.state directamente en el constructor:
+
+```js
+constructor(props) {
+  super(props);
+  // No llamar a this.setState() aquí!
+  this.state = { counter: 0 };
+  this.handleClick = this.handleClick.bind(this);
+}
+```
+
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
 
 ## Conceptos Adicionales
 
 -**Un gestor de paquetes como Yarn o npm**. Permite aprovechar un vasto ecosistema de paquetes de terceros, e instalarlos o actualizarlos de una manera fácil.
+
 -**Un empaquetador como webpack o Parcel**. Permite escribir código modular y empaquetarlo junto en paquetes más pequeños que optimizan el tiempo de carga.
+
 -**Un compilador como Babel**. Permite escribir Javascript moderno que aún así funciona en navegadores más antiguos.
