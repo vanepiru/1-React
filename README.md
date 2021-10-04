@@ -174,7 +174,7 @@ También es de tipo seguro y la mayoría de los errores se pueden detectar duran
 Hace que escribir plantillas sea más fácil y rápido.
 Ejemplo:
 
-'''js
+```js
 import React from 'react'
 
 class App extends React.Component {
@@ -188,7 +188,7 @@ class App extends React.Component {
    }
 }
 export default App
-'''
+```
 
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
