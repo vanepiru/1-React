@@ -17,6 +17,7 @@
 | 12. |[¿Qué diferencia existe entre elemento y componente?](https://github.com/vanepiru/react/blob/main/README.md#12-qu%C3%A9-diferencia-existe-entre-elemento-y-componente) |
 | 13. |[¿Qué es state en React?](https://github.com/vanepiru/react/blob/main/README.md#13-qu%C3%A9-es-state-en-react) |
 | 14. |[Constructor de un Componente](https://github.com/vanepiru/react/blob/main/README.md#14-constructor-de-un-componente) |
+| 15. |[Usar Hook-> estado](https://github.com/vanepiru/react/blob/main/README.md#14-constructor-de-un-componente) |
 <br/>
 
 ## 1. ***React Introducción***
@@ -356,6 +357,57 @@ constructor(props) {
   this.state = { counter: 0 };
   this.handleClick = this.handleClick.bind(this);
 }
+```
+
+<div align="right">
+    <b><a href="#">↥  Volver al inicio</a></b>
+</div>
+
+
+## 15. ***Usar Hook-> estado***
+
+Los Hooks son una nueva incorporación en React 16.8. Te permiten usar estado y otras características de React sin escribir una clase.
+
+```js
+import React, { useState } from 'react';
+
+function Example() {
+  // Declaración de una variable de estado que llamaremos "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+
+Equivalente
+```js
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Click me
+        </button>
+      </div>
+    );
+  }
+}
+
 ```
 
 <div align="right">
