@@ -1,6 +1,5 @@
 
 <br/>
-![BestMeagerHoki-size_restricted](https://user-images.githubusercontent.com/6796155/135780391-5ae4b4bc-abc9-42dc-a1f3-9db19789cb4a.gif)
 
 | |  Contenido                                           |                                                
 |-----|----------------------------------------------------------|
