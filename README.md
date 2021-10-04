@@ -16,7 +16,7 @@
 | 11. |[Comentarios en react y jsx](https://github.com/vanepiru/react/blob/main/README.md#11-comentarios-en-react-y-jsx) |
 | 12. |[¿Qué diferencia existe entre elemento y componente?](https://github.com/vanepiru/react/blob/main/README.md#12-qu%C3%A9-diferencia-existe-entre-elemento-y-componente) |
 | 13. |[¿Qué es state en React?](https://github.com/vanepiru/react/blob/main/README.md#13-qu%C3%A9-es-state-en-react) |
-| 14. |[Constructor de un Componente](https://github.com/vanepiru/react/blob/main/README.md#13-qu%C3%A9-es-state-en-react) |
+| 14. |[Constructor de un Componente](https://github.com/vanepiru/react/blob/main/README.md#14-constructor-de-un-componente) |
 <br/>
 
 ## 1. ***React Introducción***
