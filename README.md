@@ -45,7 +45,7 @@ El principal objetivo de ReactJS es desarrollar interfaces de usuario (UI) que m
 - **Declarativo**: React hace que sea sencillo crear interfaces de usuario interactivas. Diseña vistas simples para cada estado de tu aplicación, y React actualizará y renderizará eficientemente los componentes correctos cuando cambien los datos. Las vistas declarativas hacen que el código sea más predecible, más sencillo de entender y más fácil de depurar.
 - **Basado en componentes**: Crea componentes encapsulados que administran su propio estado y luego organizalos para crear interfaces de usuario complejas. Dado que la lógica de componentes está escrita en JavaScript y no sobre plantillas, puedes manejar fácilmente datos enriquecidos a través de la aplicación y mantener el estado fuera del DOM.
 
-Lin https://es.reactjs.org/
+Link https://es.reactjs.org/
 
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
