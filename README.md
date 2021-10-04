@@ -344,7 +344,9 @@ La típica utilización de los estados sería en tu componente de reloj, en que 
 Normalmente, los constructores de React sólo se utilizan para dos propósitos:
 
 -**Para inicializar un estado local asignando un objeto al this.state.
+
 -**Para enlazar manejadores de eventos a una instancia.
+
 -**No debes llamar setState() en el constructor(). En su lugar, si su componente necesita usar el estado local, asigna directamente el estado inicial al this.state directamente en el constructor:
 
 ```js
