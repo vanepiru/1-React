@@ -3,7 +3,7 @@
 
 | |  Contenido                                           |                                                
 |-----|----------------------------------------------------------|
-| 01. |[React Introduccion](#1-react-introducción) |
+| 01. |[React Introducción](#1-react-introducción) |
 | 02. |[Historia](#3-historia) |
 | 03. |[Caraterísticas Generales](#3-caraterísticas-generales) |
 | 04. |[Create React App](#4-create-react-app) |
@@ -14,8 +14,8 @@
 | 09. |[Tips](#9-tips) |
 | 10. |[Props](#10-props) |
 | 11. |[Comentarios en react y jsx](https://github.com/vanepiru/react/blob/main/README.md#11-comentarios-en-react-y-jsx) |
-| 12. |[](#13-cuál-es-la-diferencia-entre-componente-y-contenedor-en-react) |
-| 13. |[¿Qué diferencia existe entre elemento y componente?](#13-qué-diferencia-existe-entre-elemento-y-componente) |
+| 12. |[¿Qué diferencia existe entre elemento y componente?](https://github.com/vanepiru/react/blob/main/README.md#12-qu%C3%A9-diferencia-existe-entre-elemento-y-componente) |
+| 13. |[¿Qué es state en React?](https://github.com/vanepiru/react/blob/main/README.md#13-qu%C3%A9-es-state-en-react) |
 <br/>
 
 ## 1. ***React Introducción***
@@ -339,18 +339,12 @@ class TodoApp extends React.Component {
 };
 ```
 
-como se cambia un estado
 
 <div align="right">
     <b><a href="#">↥  Volver al inicio</a></b>
 </div>
 
-## 15. ***PropType*** 
 
-class TodoApp extends React.Component {
-
-    this.state = {items: []}
-};
 
 ## Conceptos Adicionales
 
