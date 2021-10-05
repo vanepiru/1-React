@@ -6,7 +6,7 @@
 
 | |  Contenido                                           |                                                
 |-----|----------------------------------------------------------|
-| 01. |[React Introducción](#1-react-introducción) |
+| 01. |[Introducción a React](#1-react-introducción) |
 | 02. |[Historia](#3-historia) |
 | 03. |[Caraterísticas Generales](#3-caraterísticas-generales) |
 | 04. |[Create React App](#4-create-react-app) |
@@ -23,7 +23,7 @@
 | 15. |[Estado con Hook](https://github.com/vanepiru/react/blob/main/README.md#15-estado-con-hook) |
 <br/>
 
-## 1. ***React Introducción***
+## 1. ***Introducción a React***
 React se define como una librería Javascript focalizada en el desarrollo de interfaces de usuario.
 El principal objetivo de ReactJS es desarrollar interfaces de usuario (UI) que mejoren la velocidad de las aplicaciones. Utiliza DOM virtual (objeto JavaScript), que mejora el rendimiento de la aplicación. El DOM virtual de JavaScript es más rápido que el DOM real.
 
