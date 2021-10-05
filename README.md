@@ -6,7 +6,7 @@
 
 | |  Contenido                                           |                                                
 |-----|----------------------------------------------------------|
-| 01. |[Introducción a React](#1-react-introducción) |
+| 01. |[Introducción a React](https://github.com/vanepiru/react/blob/main/README.md#1-introducci%C3%B3n-a-react) |
 | 02. |[Historia](#3-historia) |
 | 03. |[Caraterísticas Generales](#3-caraterísticas-generales) |
 | 04. |[Create React App](#4-create-react-app) |
