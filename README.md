@@ -2,7 +2,7 @@
 <br/>
 
 ***React***
-![image](https://user-images.githubusercontent.com/6796155/136084610-a9fc816b-d9ea-474f-9bd1-5e77707cd592.png)
+![image](https://user-images.githubusercontent.com/6796155/136084883-b8317510-ab5d-4a96-973e-77064011b620.png)
 
 | |  Contenido                                           |                                                
 |-----|----------------------------------------------------------|
