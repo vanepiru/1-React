@@ -17,7 +17,7 @@
 | 12. |[¿Qué diferencia existe entre elemento y componente?](https://github.com/vanepiru/react/blob/main/README.md#12-qu%C3%A9-diferencia-existe-entre-elemento-y-componente) |
 | 13. |[¿Qué es state en React?](https://github.com/vanepiru/react/blob/main/README.md#13-qu%C3%A9-es-state-en-react) |
 | 14. |[Constructor de un Componente](https://github.com/vanepiru/react/blob/main/README.md#14-constructor-de-un-componente) |
-| 15. |[Usar Hook-> estado](https://github.com/vanepiru/react/blob/main/README.md#15-usar-hook--estado) |
+| 15. |[Estado con Hook](https://github.com/vanepiru/react/blob/main/README.md#15-usar-hook--estado) |
 <br/>
 
 ## 1. ***React Introducción***
@@ -364,9 +364,10 @@ constructor(props) {
 </div>
 
 
-## 15. ***Usar Hook-> estado***
+## 15. ***Estado con Hook***
 
-Los Hooks son una nueva incorporación en React 16.8. Te permiten usar estado y otras características de React sin escribir una clase.
+Los Hooks son una nueva incorporación en React 16.8. Permiten usar estado y otras características de React sin escribir una clase.
+Por ejempo Con Hook
 
 ```js
 import React, { useState } from 'react';
@@ -386,6 +387,7 @@ function Example() {
 }
 ```
 
+Por ejempo Sin Hook
 Equivalente
 ```js
 class Example extends React.Component {
@@ -416,8 +418,8 @@ class Example extends React.Component {
 
 ## Conceptos Adicionales
 
--**Un gestor de paquetes como Yarn o npm**. Permite aprovechar un vasto ecosistema de paquetes de terceros, e instalarlos o actualizarlos de una manera fácil.
+-**gestor de paquetes como Yarn o npm**. Permite aprovechar un vasto ecosistema de paquetes de terceros, e instalarlos o actualizarlos de una manera fácil.
 
--**Un empaquetador como webpack o Parcel**. Permite escribir código modular y empaquetarlo junto en paquetes más pequeños que optimizan el tiempo de carga.
+-**empaquetador como webpack o Parcel**. Permite escribir código modular y empaquetarlo junto en paquetes más pequeños que optimizan el tiempo de carga.
 
--**Un compilador como Babel**. Permite escribir Javascript moderno que aún así funciona en navegadores más antiguos.
+-**compilador como Babel**. Permite escribir Javascript moderno que aún así funciona en navegadores más antiguos.
