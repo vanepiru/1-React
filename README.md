@@ -211,7 +211,8 @@ export default App
 
 ## 10. ***Props***
 
-Las propiedades de un componente se pueden definir como los atributos de configuración para dicho componente. Son recibidos desde un nivel superior (normalmente al instanciar el componente) y por definición son inmutables, es decir, un componente no puede cambiar sus propias props.
+Las propiedades de un componente se pueden definir como los atributos de configuración para dicho componente. 
+La forma de pasar datos de padres a hijos se denomina Props y son inmutables, es decir que un componente que recibe props, solamente puede leerlas y no sobreescribir el dato que recibe. (Son read-only)
 
 Ejemplo de uso de los props pasandole las propiedades cuando se van a renderizar el DOM
 
