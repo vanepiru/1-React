@@ -361,9 +361,7 @@ constructor(props) {
   this.handleClick = this.handleClick.bind(this);
 }
 ```
-
-
-El estado de nuestro componente en el constructor se define así:
+Otro ejemplo
 
 ```js
 constructor (props) {
