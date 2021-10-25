@@ -439,3 +439,5 @@ class Padre extends React.Component {
 -**empaquetador como webpack o Parcel**. Permite escribir código modular y empaquetarlo junto en paquetes más pequeños que optimizan el tiempo de carga.
 
 -**compilador como Babel**. Permite escribir Javascript moderno que aún así funciona en navegadores más antiguos.
+
+-**Cuando creamos un proyecto de React. JS, por defecto se ejecutará en el puerto 3000
